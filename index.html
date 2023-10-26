@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор шашлыка</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="content">
+        <h1>Калькулятор шашлыка</h1>
+        <div class= "question1">
+          <p>Сколько вас?</p>
+          <div class="numberquestion">
+        <input
+          type="number"
+          placeholder="Сколько вас?"
+          id="input1"
+          value="10"
+        />
+          </div>
+  
+        </div>
+        <div class= "question2">
+          <p>Какое мясо будем есть?</p>
+          <div class="myasoquestion">
+          <div class = "myaso"> 
+              <input
+              name = "myaso"
+              type="radio"
+              id="svin"
+              value="300"
+              data-name = "свинины"
+          /> 
+          <label for="svin">Свинина</label>
+          </div>
+          <div class = "myaso"> 
+              <input
+              name = "myaso"
+              type="radio"
+              id="cow"
+              value="300"
+              data-name = "говядины"
+          /> 
+          <label for="cow">Говядина</label>
+          </div>
+          <div class = "myaso"> 
+              <input
+              name = "myaso"
+              type="radio"
+              id="baran"
+              value="300"
+              data-name = "баранины"
+          /> 
+          <label for="baran">Баранина</label>
+          </div>
+          <div class = "myaso"> 
+              <input
+              name = "myaso"
+              type="radio"
+              id="chicken"
+              value="400"
+              data-name = "куриного мяса"
+          /> 
+          <label for="chicken">Курица</label>
+          </div>
+          <div class = "myaso"> 
+              <input
+              name = "myaso"
+              type="radio"
+              id="veg"
+              value="400"
+              data-name = "растительного мяса"
+          /> 
+          <label for="veg">Растительное мясо</label>
+          </div>
+          </div>
+      </div>  
+        
+        <div class = "question3">
+          <p>Насколько вы голодные?</p>
+          <div class="golodquestion">
+              <div class = "golodAmount">
+                <label>Не голодные</label>
+                <input
+                  name = "golod"
+                  type="range"
+                  min = "0"
+                  max = "200"     
+                  value="100"
+                  step = "100"
+                  />
+              <label>Очень голодные!</label>
+              </div>
+          </div>
+        </div>
+       
+      <div class = "question4">
+          <p>Долго будем сидеть?</p>
+          <div class="timequestion">
+          <div class = "time">
+              <input
+              name = "time"
+              type="radio"
+              id="nemnogo"
+              value="0"
+          />
+          <label for="nemnogo">Поедим да пойдём</label>
+          </div>
+          <div class = "time">
+              <input
+              name = "time"
+              type="radio"
+              id="norm-time"
+              value="100"
+          />
+          <label for="norm-time">Нормально так посидим</label>
+          </div>
+          <div class = "time">
+              <input
+              name = "time"
+              type="radio"
+              id="dolgo"
+              value="200"
+  
+          />
+          <label for="dolgo">До утра</label>
+          </div>
+          </div>
+      </div>
+        <div class = "question5">
+      <p> Вы пьёте алкоголь?</p>
+      <div class="alcoquestion">
+      <div class = "alco">
+          <input
+          name = "alco"
+          type="radio"
+          id="noalco"
+          value="0"
+  
+      />
+      <label for="noalco">Не пьём!</label>
+      </div>
+      <div class = "alco">
+          <input
+          name = "alco"
+          type="radio"
+          id="yesalco"
+          value="400"
+  
+      />
+      <label for="noalco">Пьём!</label>
+      </div>
+      </div>
+     </div>
+     
+     <div class="submit">
+      <button id="submit">Рассчитать</button>
+        <div>
+          <h4>Вам нужно столько:</h4>
+          <p><span id="result">0</span> кг. <span id="type-of-myaso"></span></p>
+  
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </body>
+</html>
